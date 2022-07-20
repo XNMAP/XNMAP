@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap" rel="stylesheet">
+  <head>
+    <style>
+    div{
+      text-align: center;
+    }
+      .img{
+       
+        width: 30%;
+        animation-name:xnmap; 
+animation-duration:8s; animation-iteration-count:infinite;
+      }
+      @keyframes xnmap{ 0%{ margin-left: 10px;
+
+} 
+10%{
+  margin-left: 40px;
+  
+}
+30%{
+  margin-inline: 60%;
+}
+50%{
+  
+  margin-bottom: -60px;
+}
+}
+
+      
+      
+    #btc{
+      
+      font-family: 'Almarai', sans-serif;
+        color: #8cff19;
+      }
+      .button{
+        font-family: 'Almarai', sans-serif;
+        margin: 6px;
+        width: 40%;
+        padding: 6px 6px ;
+        border: 0px;
+      }
+      input{
+        border-radius: 10px;
+        width: 60%;
+        padding: 4px 4px ;
+        border:1px solid red;
+        outline: 0px;
+      }
+      .h1{
+         
+        font-family: 'Almarai', sans-serif;
+        color:black;
+      }
+      .bt{
+        padding: 8px 8px;
+        font-family: 'Almarai', sans-serif;
+       width: 40%; 
+       margin: 6px;
+       border: 0px;
+       background-color: red;
+       color: white;
+       border-radius: 10px;
+      }
+       .bt:hover{
+         font-family: 'Almarai', sans-serif;
+         padding: 8px 8px;
+       width: 40%; 
+       margin: 6px;
+       border: 0px;
+       background-color:orange;
+       color: white;
+       border-radius: 10px;
+      }
+      #change{
+        font-family: 'Almarai', sans-serif;
+        width: 40%;
+        margin: 6px;
+        border: 0px;
+        background-color:black;
+       color: white;
+       border-radius: 10px;
+       padding:8px 8px ;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div>
+      
+      <h1 id="btc">💲💰</h1>
+      <img id="m" class="img" src="5.jpg">
+      
+      <br>
+      <h1 id="good" class="h1">من هذا الشخص</h1>
+     
+     
+      <button onclick="xnmap1()" id="challnge1" type="button" class="bt" value="1">فاسد</button>
+      <br>
+      <button id="challnge2" value="2" type="button" class="bt" onclick="xnmap2()">رئيس</button>
+      <br>
+      <button onclick="xnmap3()" value="3" id="challnge3" type="button" class="bt">اخناتوش العظيم</button>
+      <br>
+   <button value="change" id="change" type="button" onclick="x()">الهديه</button>
+    </div>
+    <script>
+      function xnmap1(){
+        var challnge1 = document.getElementById("challnge1").value;
+        
+        
+        if(challnge1=="1"){
+          
+          document.getElementById("btc").innerHTML="<h3 style='color:#8cff19;'>💲💵</h3>";
+         document.getElementById("good").innerHTML="<h3>هههه بحلي العلمك الله</h3>";
+         
+        }
+        
+      }
+      function xnmap2(){
+        var challnge2 = document.getElementById("challnge2").value;
+        
+        if(challnge2=="2"){
+          document.getElementById("good").innerHTML="<h3>الشفار</h3>";
+        
+          document.getElementById("btc").innerHTML="<h3 style='color:#8cff19;'>💲💵💵</h3>";
+        }
+        
+      }
+      
+      
+      function xnmap3(){
+        var challnge3 = document.getElementById("challnge3").value;
+        
+        if(challnge3=="3"){
+          document.getElementById("good").innerHTML="<h3>الجواب صحيح</h3>";
+          document.getElementById("btc").innerHTML="<h3 style='color:#8cff19;'>💲💵💵💵</h3>";
+        }
+      }
+      function x(){
+        change = document.getElementById("change").value;
+        
+        if(change=="change"){
+    document.getElementById("good").innerHTML="<a href='https://youtu.be/lxFW8oWsxxI'><img style='width:10%;' src='7.png'/></a><p>اضغط على الهديه</p>";
+        }
+      }
+    </script>
+    
+  </body>
+</html>
+
+  
